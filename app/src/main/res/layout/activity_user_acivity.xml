@@ -1,3 +1,4 @@
+<!-- Layout for the main menu -->
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,6 +23,7 @@
         android:layout_marginTop="33dp"
         android:id="@+id/welcome" />
 
+    <!-- Lead to privacy activity -->
     <Button
         android:text="Privacy"
         android:layout_width="wrap_content"
