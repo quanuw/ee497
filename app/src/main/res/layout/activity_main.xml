@@ -9,10 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.yu.login.MainActivity">
-    <!-- Layout for the main activity (sign in) -->
-    <!-- TODO: verify inputs -->
 
-    <!--Text box for real name -->
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,7 +24,6 @@
         android:layout_alignParentEnd="true"
         android:hint="Name" />
 
-    <!-- Text box for username (screename) -->
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,7 +38,6 @@
         android:layout_alignParentEnd="true"
         android:hint="Username" />
 
-    <!-- Text box for password -->
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,7 +52,6 @@
         android:layout_alignParentEnd="true"
         android:hint="Password" />
 
-    <!-- Button for confirming sign in -->
     <Button
         android:text="Register"
         android:layout_width="wrap_content"
