@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         final Button registerButton = (Button) findViewById(R.id.registerButton);
         final TextView signin = (TextView) findViewById(R.id.signin);
 
-        // Listens for click. Begins registration activity once button is clicked.
         signin.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent registerIntent = new Intent(MainActivity.this, RegisterAcivity.class);
@@ -27,12 +26,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Listens for click. Begins main menu activity once button is clicked.
         registerButton.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View v) {
-                        Intent registerIntent = new Intent(MainActivity.this, UserAcivity.class);
-                        MainActivity.this.startActivity(registerIntent);
+                        Intent MenuIntent = new Intent(MainActivity.this, MenuActivity.class);
+                        MainActivity.this.startActivity(MenuIntent);
                     }
         } );
     }

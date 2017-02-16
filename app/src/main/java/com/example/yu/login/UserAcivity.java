@@ -18,8 +18,8 @@ public class UserAcivity extends AppCompatActivity {
 
         PrivacyButton.setOnClickListener(new Button.OnClickListener(){
             public void onClick(View v) {
-                Intent privacyIntent = new Intent(UserAcivity.this, Privacy.class);
-                UserAcivity.this.startActivity(privacyIntent);
+                Intent MenuIntent = new Intent(UserAcivity.this, MenuActivity.class);
+                UserAcivity.this.startActivity(MenuIntent);
             }
         } );
     }
