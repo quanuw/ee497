@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yu.login">
-
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Request location permissions. -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +20,12 @@
         </activity>
         <activity android:name=".RegisterAcivity" />
         <activity android:name=".UserAcivity" />
-        <activity android:name=".Privacy"></activity>
+        <activity android:name=".Privacy">
+
+        </activity>
+        <service android:name=".GPS_Service"/>
+        <!-- Create GPS service. Should go outside of activity! If not then service will not be
+        recognized by other activities! -->
     </application>
 
 </manifest>

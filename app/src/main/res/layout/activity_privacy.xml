@@ -9,20 +9,19 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#252345"
     tools:context="com.example.yu.login.Privacy">
+    <!--android:background=""-->
     <!-- Layout for privacy settings -->
 
     <!-- Frames the images-->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/icon_reliability"
         android:layout_marginTop="33dp"
         android:id="@+id/imageView6"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
-
+    <!--app:srcCompat="@drawable/icon_reliability"-->
     <!-- Toggles GPS on and off -->
     <!-- TODO: notify the user when GPS is off (push notification?) -->
     <ToggleButton
@@ -34,7 +33,12 @@
         android:layout_marginTop="64dp"
         android:textOn="GPS ON"
         android:textOff="GPS OFF"
-        android:id="@+id/GpsButton" />
+        android:id="@+id/gpsButton" />
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coordinates: "
+        android:id="@+id/textView" />
+    <!-- TODO: shouldn't be using hardcode strings. -->
 </RelativeLayout>
