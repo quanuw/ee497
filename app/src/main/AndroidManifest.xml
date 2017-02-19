@@ -26,6 +26,7 @@
             android:label="@string/title_activity_menu"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity android:name=".MenuActivity_v2" />
         <service android:name=".GPS_Service" />
         <!-- Create GPS service. Should go outside of activity! If not then service will not be
         recognized by other activities! -->

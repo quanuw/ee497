@@ -26,10 +26,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // MenuActtivity_v2 avoids use of fragments.
         registerButton.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View v) {
-                        Intent MenuIntent = new Intent(MainActivity.this, MenuActivity.class);
+                        Intent MenuIntent = new Intent(MainActivity.this, MenuActivity_v2.class);
                         MainActivity.this.startActivity(MenuIntent);
                     }
         } );
